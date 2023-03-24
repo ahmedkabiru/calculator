@@ -36,7 +36,7 @@ pipeline{
         always {
                 slackSend channel: '#random',
                 color: 'good',
-                message: "The pipeline ${currentBuild.fullDisplayName} failed."
+                message: "The pipeline ${currentBuild.fullDisplayName} successful."
         }
 //         always {
 //             mail to: 'opeyemi.kabiru@yahoo.com',
