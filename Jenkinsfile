@@ -35,7 +35,7 @@ pipeline{
    post {
         always {
                 slackSend channel: '#random',
-                color: 'danger',
+                color: 'good',
                 message: "The pipeline ${currentBuild.fullDisplayName} failed."
         }
 //         always {
