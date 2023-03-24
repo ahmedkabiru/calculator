@@ -38,11 +38,11 @@ pipeline{
                 color: 'danger',
                 message: "The pipeline ${currentBuild.fullDisplayName} failed."
         }
-        always {
-            mail to: 'opeyemi.kabiru@yahoo.com',
-            subject: "Completed Pipeline: ${currentBuild.fullDisplayName}",
-            body: "Your build completed, please check: ${env.BUILD_URL}"
-        }
+//         always {
+//             mail to: 'opeyemi.kabiru@yahoo.com',
+//             subject: "Completed Pipeline: ${currentBuild.fullDisplayName}",
+//             body: "Your build completed, please check: ${env.BUILD_URL}"
+//         }
 
    }
 }
